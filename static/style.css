@@ -1,0 +1,133 @@
+/* Import elegant Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Open+Sans:wght@400;600&display=swap');
+
+/* General Body Styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(135deg, #fdf5e6, #fffdf7); /* Soft cream gradient */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    width: 90%;
+    max-width: 700px;
+    background-color: #ffffff;
+    padding: 40px 50px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+    text-align: center;
+    border: 3px solid #f8d9a7;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+/* Title Styling */
+h1 {
+    font-family: 'Playfair Display', serif;
+    color: #a52a2a; /* Deep burgundy */
+    font-size: 48px;
+    margin-bottom: 25px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+}
+
+/* Subtitle for elegance */
+.subtitle {
+    font-size: 18px;
+    color: #666;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+/* Form Styling */
+form {
+    margin-bottom: 25px;
+}
+
+/* Label Styling */
+label {
+    font-size: 20px;
+    color: #444;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 12px;
+}
+
+/* Textarea Styling */
+textarea {
+    width: 100%;
+    padding: 15px;
+    border: 2px solid #e0c8a9;
+    border-radius: 15px;
+    resize: none;
+    font-size: 16px;
+    background-color: #fdf9f3;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Focus effect for the textarea */
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 15px rgba(233, 150, 122, 0.3); /* Warm soft glow effect */
+}
+
+/* Button Styling */
+button {
+    background-color: #8b0000; /* Deep red */
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 15px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 8px 20px rgba(139, 0, 0, 0.3);
+}
+
+/* Button Hover Effect */
+button:hover {
+    background-color: #6e0000; /* Darker red */
+    transform: scale(1.05); /* Slight zoom */
+}
+
+/* Recipe Output Styling */
+.output {
+    background-color: #fffaf0; /* Warm cream */
+    padding: 25px;
+    border-radius: 15px;
+    border: 2px solid #e0c8a9;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    font-family: 'Playfair Display', serif;
+    line-height: 1.8;
+    font-size: 18px;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* Recipe Title Styling */
+.output h2 {
+    color: #8b0000; /* Burgundy */
+    border-bottom: 2px solid #f0d6b0;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
