@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe Generator</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recipe Generator</h1>
+        <div class="subtitle">Craft delicious recipes with your favorite ingredients!</div>
+        <form method="POST">
+            <label for="ingredients">Enter your ingredients (comma-separated):</label>
+            <textarea name="ingredients" id="ingredients" rows="4" placeholder="e.g., chicken, garlic, tomatoes"></textarea><br>
+            <button type="submit">Generate Recipe</button>
+        </form>
+        {% if recipe %}
+            <div class="output">
+                <h2>Your Recipe:</h2>
+                <p>{{ recipe|safe }}</p>
+            </div>
+        {% endif %}
+    </div>
+</body>
+
+
+</html>
